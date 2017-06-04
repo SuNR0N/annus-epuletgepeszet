@@ -1,0 +1,13 @@
+<div class="card-deck">
+  <div class="card"
+       *ngFor="let partner of partners"
+       (click)="navigateToPartner(partner)">
+    <img class="card-img-top"
+          [src]="partner.logo"
+          [alt]="partner.name">
+    <div class="card-block">
+      <h4 class="card-title">{{ partner.name }}</h4>
+      <p class="card-text">{{ partner.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.contact {
+    margin: 1% 0;
+
+    .form-group {
+        margin: 0;
+        background-color: rgba($a-black, $a-opacity);
+        color: $a-white;
+    }
+}

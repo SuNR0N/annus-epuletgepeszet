@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.card-deck {
+
+    @include media-breakpoint-down(xs) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .card {
+        cursor: pointer;
+        flex: 0 0 23%;
+        margin: 1%;
+        padding: 10px;
+        &:hover {
+            border: 2px solid rgba($a-black, 1 - $a-opacity);
+        }
+        @include media-breakpoint-down(lg) {
+            flex-basis: 31%;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-basis: 48%;
+        }
+        @include media-breakpoint-down(xs) {
+            flex-basis: 65%;
+        }
+    }
+}

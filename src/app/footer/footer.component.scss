@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: $a-header-size;
+    line-height: $a-header-size;
+    color: $a-white;
+    z-index: 100;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .copyright {
+            flex: 1 1 0px;
+            text-align: center;
+        }
+    }
+}
+
+.fa {
+    font-size: $a-social-font-size;
+    width: $a-social-dimension;
+    line-height: $a-social-dimension;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: $a-opacity;
+}
+
+.fa-facebook-official {
+    background: $a-white;
+    color: $a-fb-blue;
+}

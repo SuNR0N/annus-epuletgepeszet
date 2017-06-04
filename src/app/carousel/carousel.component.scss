@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+img {
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba($a-black, $a-carousel-caption-opacity);
+}

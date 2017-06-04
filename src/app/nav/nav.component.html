@@ -1,0 +1,40 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top bg-faded">
+    <button class="navbar-toggler navbar-toggler-right"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-label="Toggle navigation"
+            (click)="isExpanded = !isExpanded"
+            [attr.aria-expanded]="!isExpanded">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand"
+       href="#">Épületgépészet mesterfokon</a>
+    <div class="collapse navbar-collapse"
+         id="navbarText"
+         [ngbCollapse]="!isExpanded">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLinkActive="active"
+             routerLink="/about">Rólunk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLinkActive="active"
+             routerLink="/references">Referenciák</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLinkActive="active"
+             routerLink="/partners">Partnerek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             routerLinkActive="active"
+             routerLink="/contact">Kapcsolat</a>
+        </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,16 @@
+<div class="reference"
+     *ngFor="let reference of references">
+  <div class="reference-caption">
+    <h4>{{ reference.name }}</h4>
+    <p>{{ reference.description }}</p>
+  </div>
+  <ngb-carousel class="carousel">
+    <ng-template *ngFor="let image of reference.imgNames" ngbSlide>
+      <div class="container">
+        <img src="{{ reference.imgDir + '/' + image }}"
+             [alt]="image"
+             class="d-block img-fluid">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>

@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.reference {
+    border: 2px solid rgba($a-black, 1 - $a-opacity);
+    background: rgba($a-black, $a-opacity);
+    color: $a-white;
+    margin: 10px 0;
+    padding: 15px 0;
+
+    .reference-caption {
+        padding: 0 15px;
+        margin-bottom: 5px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    /deep/ .carousel-inner {
+        max-height: 500px;
+
+        .carousel-item img {
+            width: auto;
+        }
+    }
+}

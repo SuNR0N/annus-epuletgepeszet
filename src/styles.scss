@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./styles/variables";
+@import "./styles/overrides";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+
+body {
+    background-color: $a-gray;
+}

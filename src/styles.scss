@@ -7,3 +7,10 @@
 body {
     background-color: $a-gray;
 }
+
+a {
+    color: $a-link;
+    &:hover {
+        color: rgba($a-link, 0.75);
+    }
+}

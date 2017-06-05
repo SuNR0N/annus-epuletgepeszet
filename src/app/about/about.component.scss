@@ -5,4 +5,14 @@
     padding: 10px;
     background-color: rgba($a-black, $a-opacity);
     color: $a-white;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            margin-right: 5px;
+        }
+    }
 }
